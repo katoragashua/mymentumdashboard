@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Mymentum Dashboard",
+    "version": "1.0",
+    "description": "My Personal Dashboard extension",
+    "action": {
+        "default_icon": "logo-image.jpg"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

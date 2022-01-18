@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.6;
+    padding: 0;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.crypto {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.crypto p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-shadow: 0 0 5px white;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-end;
+    margin: 0;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.weather p,
+.weather h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    text-shadow: 0 0 5px white;
+}
+
+.weather img {
+    margin-left: 1rem;
+    border-radius: 10px;
+    width: 40px;
+}
+
+.time {
+    padding: 0;
+    margin-bottom: auto;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 0 5px grey;
+}
+
+#currentTime {
+    text-align: center;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    margin: 0;
+    padding: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+}
+
+.footer p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+    
+
+.footer p:nth-child(1) a {
+    font-weight: bold;
+}
+
+ a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: purple;
+}
+
+/* font-family: 'Caveat', cursive;
+
+font-family: 'Fredoka One', cursive;
+
+font-family: 'Mochiy Pop P One', sans-serif;
+
+font-family: 'Orbitron', sans-serif;
+
+font-family: 'Press Start 2P', cursive;
+
+font-family: 'Schoolbell', cursive;
+
+font-family: 'Ubuntu', sans-serif; */
