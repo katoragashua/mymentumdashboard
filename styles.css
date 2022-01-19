@@ -26,13 +26,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
+    padding: 1.5rem;
 }
 
 .crypto {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 1rem;
     font-weight: bold;
 }
 
@@ -46,10 +46,8 @@ body {
 .weather {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     align-items: flex-end;
     margin: 0;
-    padding: 1rem;
     font-weight: bold;
 }
 
@@ -57,13 +55,13 @@ body {
 .weather h4 {
     margin-top: 0;
     margin-bottom: .5rem;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 7px white;
 }
 
 .weather img {
     margin-left: 1rem;
+    box-shadow: 3px 3px 5px white;
     border-radius: 10px;
-    width: 40px;
 }
 
 .time {

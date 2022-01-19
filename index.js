@@ -70,7 +70,7 @@ navigator.geolocation.getCurrentPosition((pos) => {
   let lati = currentPosition.latitude;
   let long = currentPosition.longitude;
   fetch(
-    `http://api.weatherstack.com/current?access_key=ed7413a71f9af88e2af42e7bcc6e54ef&query=${lati},${long}`
+    `http://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${long}&units=metric&appid=077a3659299af569d1e982ecc6505cd3`
   )
     .then((res) => {
       if (!res.ok) {
@@ -79,9 +79,9 @@ navigator.geolocation.getCurrentPosition((pos) => {
       return res.json();
     })
     .then((weather) => {
-      weatherCondition.innerHTML = `<p>${weather.current.temperature}⁰ <img src=${weather.current.weather_icons[0]} alt="weather icon"></p>
-                           <p>${weather.current.weather_descriptions[0]}</p>
-                           <h4>${weather.location.name}</h4>
+      weatherCondition.innerHTML = `<p>${weather.main.temp}⁰ <img src='http://openweathermap.org/img/w/${weather.weather[0].icon}.png' alt="weather icon"></p>
+                           <p>${weather.weather[0].description}</p>
+                           <h4>${weather.name}, ${weather.sys.country}</h4>
                             `;
     })
     .catch((err) => {
@@ -97,6 +97,3 @@ function getCurrentTime() {
 
 setInterval(getCurrentTime, 1000);
 
-// `http://api.weatherapi.com/v1/current.json/?q=${pos.coords.latitude},${pos.coords.longitude}&key=e908cfefad694dd7a6675205221801`;
-
-// http://api.weatherstack.com/current?access_key=ed7413a71f9af88e2af42e7bcc6e54ef&query=${lati},${long}
